@@ -1,0 +1,11 @@
+module george(o, x, y);
+output o;
+input x, y;
+wire or_wire, not_wire;
+
+or o1(or_wire, x, y);
+not n1(not_wire, y);
+and a1(o, or_wire, not_wire);
+
+endmodule // george
+
